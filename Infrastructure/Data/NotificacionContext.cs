@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Data;
 public class NotificacionContext : DbContext
 {
-    protected NotificacionContext(DbContextOptions options) : base(options)
+    public NotificacionContext(DbContextOptions options) : base(options)
     {
     }
     public DbSet<Auditoria> Auditorias { get; set; }

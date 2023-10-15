@@ -37,9 +37,5 @@ namespace Core.Entities
 
         [Required]
         public string TextoNotificacion { get; set; }
-        [Required]
-        public DateTime FechaCreacion { get; set; }
-        [Required]
-        public DateTime FechaModificacion { get; set; }
     }
 }

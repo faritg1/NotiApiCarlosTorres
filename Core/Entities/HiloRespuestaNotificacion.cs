@@ -10,10 +10,6 @@ namespace Core.Entities
     {
         [Required]
         public string NombreTipo { get; set; }
-        [Required]
-        public DateTime FechaCreacion { get; set; }
-        [Required]
-        public DateTime FechaModificacion { get; set; }
 
         public ICollection<ModuloNotificacion> ModulosNotificaciones { get; set; }
         public ICollection<Blockchain> Blockchains { get; set; }

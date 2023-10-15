@@ -22,9 +22,5 @@ namespace Core.Entities
 
         [Required]
         public string HashGenerado { get; set; }
-        [Required]
-        public DateTime FechaCreacion { get; set; }
-        [Required]
-        public DateTime FechaModificacion { get; set; }
     }
 }

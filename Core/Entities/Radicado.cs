@@ -8,11 +8,6 @@ namespace Core.Entities
 {
     public class Radicado : BaseEntity
     {
-        [Required]
-        public DateTime FechaCreacion { get; set; }
-        [Required]
-        public DateTime FechaModificacion { get; set; }
-
         public ICollection<ModuloNotificacion> ModulosNotificaciones { get; set; }
     }
 }

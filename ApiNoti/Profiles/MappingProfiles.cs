@@ -13,6 +13,7 @@ namespace ApiNoti.Profiles
         public MappingProfiles() {
             CreateMap<Auditoria, AuditoriaDto>().ReverseMap();
             CreateMap<EstadoNotificacion, EstadoNotificacionDto>().ReverseMap();
+            CreateMap<Formato, FormatoDto>().ReverseMap();
         }
     }
 }

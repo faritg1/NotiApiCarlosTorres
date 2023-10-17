@@ -14,6 +14,7 @@ namespace ApiNoti.Profiles
             CreateMap<Auditoria, AuditoriaDto>().ReverseMap();
             CreateMap<EstadoNotificacion, EstadoNotificacionDto>().ReverseMap();
             CreateMap<Formato, FormatoDto>().ReverseMap();
+            CreateMap<HiloRespuestaNotificacion, HiloRespuestaNotDto>().ReverseMap();
         }
     }
 }

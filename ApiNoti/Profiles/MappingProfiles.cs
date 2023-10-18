@@ -19,6 +19,7 @@ namespace ApiNoti.Profiles
             CreateMap<TipoNotificacion, TipoNotificacionDto>().ReverseMap();
             CreateMap<TipoRequerimiento, TipoRequerimientoDto>().ReverseMap();
             CreateMap<ModuloNotificacion, ModuloNotificacionDto>().ReverseMap();
+            CreateMap<Blockchain, BlockchainDto>().ReverseMap();
         }
     }
 }

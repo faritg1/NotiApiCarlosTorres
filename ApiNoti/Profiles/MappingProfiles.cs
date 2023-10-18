@@ -16,6 +16,7 @@ namespace ApiNoti.Profiles
             CreateMap<Formato, FormatoDto>().ReverseMap();
             CreateMap<HiloRespuestaNotificacion, HiloRespuestaNotDto>().ReverseMap();
             CreateMap<Radicado, RadicadoDto>().ReverseMap();
+            CreateMap<TipoNotificacion, TipoNotificacionDto>().ReverseMap();
         }
     }
 }

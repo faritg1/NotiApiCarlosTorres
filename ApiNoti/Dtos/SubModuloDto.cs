@@ -7,6 +7,9 @@ namespace ApiNoti.Dtos
 {
     public class SubModuloDto
     {
-        
+        public int Id { get; set; }
+        public string NombreSubModulo { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaModificacion { get; set; }
     }
 }

@@ -20,6 +20,13 @@ namespace ApiNoti.Profiles
             CreateMap<TipoRequerimiento, TipoRequerimientoDto>().ReverseMap();
             CreateMap<ModuloNotificacion, ModuloNotificacionDto>().ReverseMap();
             CreateMap<Blockchain, BlockchainDto>().ReverseMap();
+            CreateMap<GenericoVsSubModulo, GenericoVsSubModuloDto>().ReverseMap();
+            CreateMap<MaestroVsSubModulo, MestroVsSubModuloDto>().ReverseMap();
+            CreateMap<ModuloMaestro, ModuloMaestroDto>().ReverseMap();
+            CreateMap<PermisoGenerico, PermisoGenericoDto>().ReverseMap();
+            CreateMap<Rol, RolDto>().ReverseMap();
+            CreateMap<RolVsMaestro, RolVsMaestroDto>().ReverseMap();
+            CreateMap<SubModulo, SubModuloDto>().ReverseMap();
         }
     }
 }

@@ -21,6 +21,13 @@ public class NotificacionContext : DbContext
     public DbSet<Radicado> Radicados { get; set; }
     public DbSet<TipoNotificacion> TiposNotificaciones { get; set; }
     public DbSet<TipoRequerimiento> TipoRequerimientos { get; set; }
+    public DbSet<GenericoVsSubModulo> GenericosVsSubModulos { get; set; }
+    public DbSet<MaestroVsSubModulo> MaestrosVsSubModulos { get; set; }
+    public DbSet<ModuloMaestro> ModulosMaestros { get; set; }
+    public DbSet<PermisoGenerico> PermisosGenericos { get; set; }
+    public DbSet<Rol> Roles { get; set; }
+    public DbSet<RolVsMaestro> RolesVsMaestros { get; set; }
+    public DbSet<SubModulo> SubModulos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

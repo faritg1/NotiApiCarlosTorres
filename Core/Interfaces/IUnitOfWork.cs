@@ -16,6 +16,13 @@ namespace Core.Interfaces
         IRadicado Radicados { get; }
         ITipoNotificacion TiposNotificaciones { get; }
         ITipoRequerimiento TiposRequerimientos { get; }
+        IGenericoVsSubModulo GenericosVsSubModulos { get; }
+        IMaestroVsSubModulo MaestrosVsSubModulos { get; }
+        IModuloMaestro ModulosMaestros { get; }
+        IPermisoGenerico PermisosGenericos { get; }
+        IRol Roles { get; }
+        IRolVsMaestro RolesVsMaestros { get; }
+        ISubModulo SubModulos { get; }
         Task<int> SaveAsync();
     }
 }

@@ -20,6 +20,13 @@ namespace Infrastructure.UnitOfWork
         private IRadicado _radicados;
         private ITipoNotificacion _tiposnotificaciones;
         private ITipoRequerimiento _tiposrequerimientos;
+        private IGenericoVsSubModulo _genericosvssubmodulos;
+        private IMaestroVsSubModulo _maestrosvssubmodulos;
+        private IModuloMaestro _modulosmaestros;
+        private IPermisoGenerico _permisosgenericos;
+        private IRol _roles;
+        private IRolVsMaestro _rolesvsmaestros;
+        private ISubModulo _submodulos;
 
         public UnitOfWork(NotificacionContext context)
         {
@@ -96,6 +103,62 @@ namespace Infrastructure.UnitOfWork
                     _tiposrequerimientos = new TipoRequerimientoRepository(_context);
                 }
                 return _tiposrequerimientos;
+            }
+        }
+        public IGenericoVsSubModulo GenericosVsSubModulos{
+            get{
+                if(_genericosvssubmodulos == null){
+                    _genericosvssubmodulos = new GenericoVsSubModuloRepository(_context);
+                }
+                return _genericosvssubmodulos;
+            }
+        }
+        public IMaestroVsSubModulo MaestrosVsSubModulos{
+            get{
+                if(_maestrosvssubmodulos == null){
+                    _maestrosvssubmodulos = new MaestroVsSubModuloRepository(_context);
+                }
+                return _maestrosvssubmodulos;
+            }
+        }
+        public IModuloMaestro ModulosMaestros{
+            get{
+                if(_modulosmaestros == null){
+                    _modulosmaestros = new ModuloMaestroRepository(_context);
+                }
+                return _modulosmaestros;
+            }
+        }
+        public IPermisoGenerico PermisosGenericos{
+            get{
+                if(_permisosgenericos == null){
+                    _permisosgenericos = new PermisoGenericoRepository(_context);
+                }
+                return _permisosgenericos;
+            }
+        }
+        public IRol Roles{
+            get{
+                if(_roles == null){
+                    _roles = new RolRepository(_context);
+                }
+                return _roles;
+            }
+        }
+        public IRolVsMaestro RolesVsMaestros{
+            get{
+                if(_rolesvsmaestros == null){
+                    _rolesvsmaestros = new RolVsMaestroRepository(_context);
+                }
+                return _rolesvsmaestros;
+            }
+        }
+        public ISubModulo SubModulos{
+            get{
+                if(_submodulos == null){
+                    _submodulos = new SubModuloRepository(_context);
+                }
+                return _submodulos;
             }
         }
 
